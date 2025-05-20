@@ -1,12 +1,18 @@
-# React + Vite
+🖼️ Image Captioning App
+An AI-powered web application that generates descriptive captions for uploaded images. Built with React (frontend), Firebase (authentication & storage), and a Flask backend (caption generation), this project demonstrates a complete image processing pipeline from user interaction to machine learning inference.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔍 Features
+🔐 User Authentication using Firebase (Sign Up / Log In)
 
-Currently, two official plugins are available:
+☁️ Image Upload with Firebase Storage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🧠 Image Caption Generation via a Flask API (currently using dummy captions)
 
-## Expanding the ESLint configuration
+🖼️ Clean and Minimal UI built with React + Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Tech Stack
+Frontend: React + Vite, Tailwind CSS 
+
+Backend: Flask (Python)
+
+Authentication & Storage: Firebase
