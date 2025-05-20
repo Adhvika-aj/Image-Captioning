@@ -3,6 +3,8 @@ from flask_cors import CORS
 import os
 from werkzeug.utils import secure_filename
 import logging
+import time
+import random
 
 # Set up logging
 logging.basicConfig(level=logging.DEBUG)
@@ -20,7 +22,7 @@ captions_list = [
     "A happy dog running in the park.",
     "A sleepy cat lounging in the sun.",
     "A puppy playing with a ball.",
-    "A loyal dog waiting by the door."
+    "A dog waiting by the door."
 ]
 
 def get_next_caption(current_index):
@@ -52,6 +54,11 @@ def generate_caption():
     data = request.form
     image_count = int(data.get('currentIndex', 0))
     logger.debug(f"Image count from request: {image_count}")
+    
+    # Simulate model processing time (random delay between 5-10 seconds)
+    processing_time = random.uniform(5, 10)
+    logger.debug(f"Simulating model processing time: {processing_time:.2f} seconds")
+    time.sleep(processing_time)
     
     # Use the image count to select the caption
     # If we've gone through all captions, start over
